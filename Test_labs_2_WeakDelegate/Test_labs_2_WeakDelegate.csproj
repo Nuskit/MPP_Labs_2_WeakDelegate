@@ -50,9 +50,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TestWeakDelegate.cs" />
+    <None Include="TeskWeakDelegateUsingDynamicMethod.cs" />
+    <Compile Include="TestWeakDelegateDefault.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WeakDelegateTestClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Labs_2_WeakDelegate\Labs_2_WeakDelegate.csproj">
+      <Project>{60441D1D-0D79-4A8F-B44D-173D717567DF}</Project>
+      <Name>Labs_2_WeakDelegate</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

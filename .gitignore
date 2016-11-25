@@ -243,3 +243,5 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/Labs_2_WeakDelegate/WeakDelegateUsingDynamicMethod.cs
+/Test_labs_2_WeakDelegate/TeskWeakDelegateUsingDynamicMethod.cs

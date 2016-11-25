@@ -8,23 +8,38 @@ namespace Test_labs_2_WeakDelegate
 {
   class WeakDelegateTestClass
   {
-    public static int IntValue { get; set; }
+    public int IntValue { get; set; }
 
-    public static float FloatValue { get; set; }
+    public string stringValue { get; set; }
 
     public void Sum(int left,int right)
     {
       IntValue= left + right;
     }
 
-    public void Multi(int left,float right)
+    public void Multi(int left,string right)
     {
-      FloatValue = left * right;
+      IntValue = left * int.Parse(right);
     }
 
-    public void Generic(int first,int second,int third)
+    public int Generic(int first,int second,int third)
     {
-      IntValue = first + second + third;
+      return first + second + third;  
+    }
+
+    public void NullFunc()
+    {
+      IntValue = 1;
+    }
+
+    public void ThreeParam(int first,string second,byte third)
+    {
+      IntValue = first + int.Parse(second) + third;
+    }
+
+    public int TestWeakDelete()
+    {
+      return 5;
     }
   }
 }
